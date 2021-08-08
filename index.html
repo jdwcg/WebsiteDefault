@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script>AOS.init();</script>
+<title>WebSite</title>
+</head>
+<body>
+<script>
+    gnb1 = [
+        {gnb1:"<a href='#'> Gnb1 </a>"},
+    ];
+    lnb1 = [
+        {lnb1:"<a href='#'> Lnb1 </a>"},
+        {lnb1:"<a href='#'> Lnb2 </a>"},
+        {lnb1:"<a href='#'> Lnb3 </a>"},
+    ];
+    gnb2 = [
+        {gnb2:"<a href='#'> Gnb2 </a>"},
+    ];
+    lnb2 = [
+        {lnb2:"<a href='#'> Lnb1 </a>"},
+        {lnb2:"<a href='#'> Lnb2 </a>"},
+        {lnb2:"<a href='#'> Lnb3 </a>"},
+    ];
+    gnb3 = [
+        {gnb3:"<a href='#'> Gnb3 </a>"},
+    ];
+    lnb3 = [
+        {lnb3:"<a href='#'> Lnb1 </a>"},
+        {lnb3:"<a href='#'> Lnb2 </a>"},
+        {lnb3:"<a href='#'> Lnb3 </a>"},
+    ];
+    function GNB1 () {
+        var i = 0;
+        while( i < gnb1.length) {
+            document.write(gnb1[i].gnb1);
+            i = i + 1;
+        }
+    }
+    function LNB1 () {
+        var i = 0;
+        while( i < lnb1.length) {
+            document.write('<ul><li>'+lnb1[i].lnb1+'</ul></li>');
+            i = i + 1;
+        }
+    }
+    // var lnb2 = document.querySelector('#nav ul li ul li');
+    // for(i=0;i<lnb2.length; i++) {
+    //         lnb2[i].lnb2.style.border = "1px solid red";
+    //     }
+function GNB2 () { var i = 0; while( i < gnb2.length) { document.write(gnb2[i].gnb2); i = i + 1;}}
+function LNB2 () { var i = 0; while( i < lnb2.length) { document.write('<ul><li>'+lnb2[i].lnb2+'</ul></li>');  i = i + 1;}}
+function GNB3 () { var i = 0; while( i < gnb3.length) { document.write(gnb3[i].gnb3); i = i + 1;}}
+function LNB3 () { var i = 0; while( i < lnb3.length) { document.write('<ul><li>'+lnb3[i].lnb3+'</ul></li>');  i = i + 1;}}
+</script>
+<header class="navBg">
+    <div class="logo"><a href="#"><h2>Logo</h2></a></div>
+    <nav id="nav">
+        <ul><li><script>GNB1();</script><script>LNB1();</script></li></ul>
+        <ul><li><script>GNB2();</script><script>LNB2();</script></li></ul>
+        <ul><li><script>GNB3();</script><script>LNB3();</script></li></ul>
+    </nav>
+</header>
+</body>
+<style>
+/* 초기화 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+*{box-sizing: border-box; font-size: 16px;}
+body{margin:0; font-family: 'Noto Sans KR', sans-serif; letter-spacing: -.5px;}
+ul {list-style: none; padding: 0; margin:0;}
+h1,h2,h3,h4,h5,h6{margin:0;} h1{font-size: 24px;} h2{font-size: 20px;} h3{font-size: 18px;}
+a {text-decoration: none; display: block;} a:hover {color:var(--mainColor)}
+:root {
+    --mainColor : tomato;
+    --subColor : powderblue;
+}
+.navBg {
+    display: flex;
+    justify-content: space-between;
+    background: #f9f9f9;
+}
+.navBg #nav, .logo {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.logo {padding: .5rem 1.7em;}
+.navBg #nav {
+    display: flex;
+}
+.navBg #nav ul a {
+    text-align: center;
+}
+.navBg #nav ul li a {
+    text-align: center;
+    padding: .5rem 1.7em; 
+}
+</style>
+<script>
+    
+
+</script>
+</html>
